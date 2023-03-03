@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F2EBBF;
+}
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    color: #5C4B51;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.scoreboard {
+    display: flex;
+    gap: 30px;
+}
+
+.scoreboard div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 100px;
+    width: 115px;
+    color: #5C4B51;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.score-x {
+    border: 1px solid #8CBEB2;
+    padding: 5px 15px 5px 5px;
+}
+
+.score-x.selected {
+    background-color: #8CBEB2;
+    color: white;
+}
+
+.score-x.selected svg {
+    stroke: #538378;
+}
+
+.score-o {
+    border: 1px solid #F06060;
+    padding: 5px 5px 5px 15px;
+}
+
+.score-o.selected {
+    background-color: #F06060;
+    color: white;
+}
+
+.score-o.selected svg {
+    stroke: #AC2F2E;
+}
+
+.content-game {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    row-gap: 10px;
+    column-gap: 10px;
+    background-color: #F3B562;
+}
+
+.cell {
+    background-color: #F2EBBF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+     /* 
+    HORIZONTAL: deve utilizada apenas na segunda coluna
+        width: 350px;
+        rotate: 0deg;
+    VERTICAL: deve utilizada apenas na segunda linha
+        width: 350px;
+        rotate: 90deg;
+    DIAGONAL DECRESCENTE: diagonal crescente e decrescente devem ser utilizadas apenas na célula central
+        width: 420px;
+        rotate: 45deg;
+    DIAGONAL CRESCENTE:
+        width: 420px;
+        rotate: -45deg;
+    */
+    position: absolute;
+    background-color: #F06060;
+    height: 10px;
+    width: 350px;
+    /* rotate: 90deg; */
+    /* box-shadow: 0 0 0 0 #F06060 inset; */
+    /* transition: box-shadow .8s ease-in-out; */
+}
+
+.btn-restart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 20px;
+    border-radius: 50px;
+    border: none;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: #E4A957;
+    background-color: rgba(243, 181, 98, .2);
+
+    transition: all .5s;
+}
+
+.btn-restart:hover {
+    cursor: pointer;
+    color: #B17B2E;
+    background-color: rgba(243, 181, 98, .5);
+}
+
+.btn-restart svg {
+    transition: all .5s;
+}
+
+.btn-restart:hover svg {
+    stroke: #F06060;
+    transform: rotate(-360deg);
+}

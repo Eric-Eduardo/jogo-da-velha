@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Jogo da velha</h1>
+    </header>
+    <main>
+
+            
+        <div class="scoreboard">
+            <div class="score score-x selected">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="30" height="30" viewBox="0 0 24 24" stroke-width="3" stroke="#8CBEB2" fill="none" stroke-linecap="square" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+                <p>0</p>
+            </div>
+            <div class="score score-o">
+                <p>0</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle" width="30" height="30" viewBox="0 0 24 24" stroke-width="3" stroke="#F06060" fill="none" stroke-linecap="square" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="12" r="9" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="content-game">
+            <div data-opc="" class="cell" id="cell-00">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle" width="70" height="70" viewBox="0 0 24 24" stroke-width="3" stroke="#F06060" fill="none" stroke-linecap="square" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="12" r="9" />
+                </svg> -->
+            </div>
+            <div data-opc="" class="cell" id="cell-01">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="85" height="85" viewBox="0 0 24 24" stroke-width="2.7" stroke="#8CBEB2" fill="none" stroke-linecap="square" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg> -->
+                <!-- <div class="line"></div> -->
+            </div>
+            <div data-opc="" class="cell" id="cell-02"></div>
+
+            <div data-opc="" class="cell" id="cell-10"></div>
+            <div data-opc="" class="cell" id="cell-11">
+                <!-- <div class="line"></div> -->
+            </div>
+            <div data-opc="" class="cell" id="cell-12"></div>
+            
+            <div data-opc="" class="cell" id="cell-20"></div>
+            <div data-opc="" class="cell" id="cell-21"></div>
+            <div data-opc="" class="cell" id="cell-22"></div>
+        </div>
+        
+        <button class="btn-restart">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rotate" width="25" height="25" viewBox="0 0 24 24" stroke-width="3" stroke="#FB958D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M19.95 11a8 8 0 1 0 -.5 4m.5 5v-5h-5" />
+            </svg>
+            Reiniciar
+        </button>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
